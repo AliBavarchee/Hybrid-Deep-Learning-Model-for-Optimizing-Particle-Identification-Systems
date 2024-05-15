@@ -4,7 +4,7 @@ This project presents a novel hybrid algorithm that combines the power of a deep
 
 ## Project Objectives:
 -----
---
+
 The primary objectives of this project are as follows:
 
 
