@@ -3,8 +3,8 @@
 # %%
 
 
-import basf2 as b2
-
+#import basf2 as b2
+import ROOT
 
 import numpy as np
 
@@ -57,6 +57,7 @@ MATRIX_PATH = 'net_wgt.npy'
 # train slim data
 data_folder = "/home/alibavar/ali5/data1/slim_dstar.h5"
 
+'''
 def _make_const_lists():
     """Moving this code into a function to avoid a top-level ROOT import."""
     import ROOT.Belle2
@@ -76,40 +77,22 @@ def _make_const_lists():
     DETECTORS = []
     for det in ROOT.Belle2.Const.PIDDetectors.set():
         DETECTORS.append(ROOT.Belle2.Const.parseDetectors(det))
-    # DETECTORS = ["SVD", "CDC", "TOP", "ARICH", "ECL", "KLM"]
+    # 
 
     return PARTICLES, PDG_CODES, DETECTORS
 
-
-# %%
-
-
-PARTICLES, PDG_CODES, DETECTORS = _make_const_lists()
+    PARTICLES, PDG_CODES, DETECTORS = _make_const_lists()
+    '''
 
 
-# %%
-
-
-DETECTORS
-
-
-# %%
-
-
-PARTICLES
-
-
-# %%
-
-
-'''PARTICLES, PDG_CODES, DETECTORS = _make_const_lists()
 #
 PARTICLES = ["e", "mu", "pi", "K", "p", "d"]
 #
 PDG_CODES = [11, 13, 211, 321, 2212, 1000010020]
 #
-DETECTORS = ["SVD", "CDC", "TOP", "ARICH", "ECL", "KLM"]
-'''
+#DETECTORS = ["SVD", "CDC", "TOP", "ARICH", "ECL", "KLM"]
+
+DETECTORS = ["SD1", "SD2", "SD3", "SD4", "SD5", "SD6"]
 
 
 
