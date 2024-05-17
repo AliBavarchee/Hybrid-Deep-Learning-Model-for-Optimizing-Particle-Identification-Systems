@@ -47,6 +47,7 @@ from deeprfreg import DeepRFreg  # Import DeepRFreg class here
 
 ""
 # _make_const_lists gives some cte values ; Particles and their corrispond PDG_code, Detectors
+'''
 def _make_const_lists():
     """Moving this code into a function to avoid a top-level ROOT import."""
     import ROOT.Belle2
@@ -66,9 +67,22 @@ def _make_const_lists():
     DETECTORS = []
     for det in ROOT.Belle2.Const.PIDDetectors.set():
         DETECTORS.append(ROOT.Belle2.Const.parseDetectors(det))
-    # DETECTORS = ["SVD", "CDC", "TOP", "ARICH", "ECL", "KLM"]
+    # 
 
     return PARTICLES, PDG_CODES, DETECTORS
+
+    PARTICLES, PDG_CODES, DETECTORS = _make_const_lists()
+    '''
+
+
+#
+PARTICLES = ["e", "mu", "pi", "K", "p", "d"]
+#
+PDG_CODES = [11, 13, 211, 321, 2212, 1000010020]
+#
+#DETECTORS = ["SVD", "CDC", "TOP", "ARICH", "ECL", "KLM"]
+
+DETECTORS = ["SD1", "SD2", "SD3", "SD4", "SD5", "SD6"]
 
 #This is a common pytorch data loader which loads data and splits them to train and test(val)
 def load_training_data(directory, p_lims=None, theta_lims=None, device=None):
