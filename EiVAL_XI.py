@@ -89,7 +89,9 @@ PARTICLES = ["e", "mu", "pi", "K", "p", "d"]
 #
 PDG_CODES = [11, 13, 211, 321, 2212, 1000010020]
 #
-DETECTORS = ["SVD", "CDC", "TOP", "ARICH", "ECL", "KLM"]
+#DETECTORS = ["SVD", "CDC", "TOP", "ARICH", "ECL", "KLM"]
+
+DETECTORS = ["SD1", "SD2", "SD3", "SD4", "SD5", "SD6"]
 
 
 
