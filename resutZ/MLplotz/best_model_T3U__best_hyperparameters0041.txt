@@ -1,0 +1,5 @@
+lr: 0.001
+hidden_units: 36
+dropout: 0.4
+n_estimators: 36
+max_depth: 36
