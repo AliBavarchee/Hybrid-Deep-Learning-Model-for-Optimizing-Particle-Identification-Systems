@@ -1,0 +1,183 @@
+{
+//=========Macro generated from canvas: canvas/Histograms
+//=========  (Sat Jun 15 14:48:50 2024) by ROOT version5.34/36
+   TCanvas *canvas = new TCanvas("canvas", "Histograms",8,31,1197,855);
+   canvas->Range(0.2499593,-0.5780342,0.7500407,2.174251);
+   canvas->SetFillColor(0);
+   canvas->SetBorderMode(0);
+   canvas->SetBorderSize(2);
+   canvas->SetLogy();
+   canvas->SetGridx();
+   canvas->SetGridy();
+   canvas->SetTickx(1);
+   canvas->SetTicky(1);
+   canvas->SetFrameBorderMode(0);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#ccffcc");
+   canvas->SetFrameFillColor(ci);
+   canvas->SetFrameFillStyle(0);
+   canvas->SetFrameBorderMode(0);
+   
+   TH1F *histLR__1 = new TH1F("histLR__1","Log-Likelihood Ratios Histograms",100,0,1);
+   histLR__1->SetBinContent(41,1);
+   histLR__1->SetBinContent(43,2);
+   histLR__1->SetBinContent(45,2);
+   histLR__1->SetBinContent(46,3);
+   histLR__1->SetBinContent(47,5);
+   histLR__1->SetBinContent(48,19);
+   histLR__1->SetBinContent(49,42);
+   histLR__1->SetBinContent(50,29);
+   histLR__1->SetBinContent(51,5);
+   histLR__1->SetBinContent(52,3);
+   histLR__1->SetBinContent(53,2);
+   histLR__1->SetBinContent(55,1);
+   histLR__1->SetBinContent(101,29382);
+   histLR__1->SetEntries(29496);
+   histLR__1->SetDirectory(0);
+   
+   TPaveStats *ptstats = new TPaveStats(0.1271967,0.6658065,0.423431,0.8645161,"brNDC");
+   ptstats->SetName("stats");
+   ptstats->SetBorderSize(1);
+   ptstats->SetFillColor(0);
+   ptstats->SetLineWidth(2);
+   ptstats->SetTextAlign(12);
+   TText *text = ptstats->AddText("Entries = 29496  ");
+   text = ptstats->AddText("Mean  = 0.4846 #pm 0.001705");
+   text = ptstats->AddText("RMS   = 0.01821 #pm 0.001206");
+   text = ptstats->AddText("Integral =    114");
+   ptstats->SetOptStat(1002210);
+   ptstats->SetOptFit(1111);
+   ptstats->Draw();
+   histLR__1->GetListOfFunctions()->Add(ptstats);
+   ptstats->SetParent(histLR__1);
+   histLR__1->SetFillColor(9);
+   histLR__1->SetFillStyle(3004);
+
+   ci = TColor::GetColor("#0000ff");
+   histLR__1->SetLineColor(ci);
+   histLR__1->SetLineWidth(3);
+   histLR__1->GetXaxis()->SetTitle("Log-Likelihood ratios");
+   histLR__1->GetXaxis()->SetRange(31,70);
+   histLR__1->GetXaxis()->CenterTitle(true);
+   histLR__1->GetXaxis()->SetLabelFont(42);
+   histLR__1->GetXaxis()->SetLabelSize(0.05);
+   histLR__1->GetXaxis()->SetTitleSize(0.05);
+   histLR__1->GetXaxis()->SetTitleOffset(0.95);
+   histLR__1->GetYaxis()->SetTitle("Frequencies");
+   histLR__1->GetYaxis()->CenterTitle(true);
+   histLR__1->GetYaxis()->SetLabelFont(42);
+   histLR__1->GetYaxis()->SetLabelOffset(0.002);
+   histLR__1->GetYaxis()->SetLabelSize(0.05);
+   histLR__1->GetYaxis()->SetTitleSize(0.05);
+   histLR__1->GetYaxis()->SetTitleOffset(0.68);
+   histLR__1->GetZaxis()->SetLabelFont(42);
+   histLR__1->GetZaxis()->SetLabelSize(0.035);
+   histLR__1->GetZaxis()->SetTitleSize(0.035);
+   histLR__1->GetZaxis()->SetTitleFont(42);
+   histLR__1->Draw("");
+   
+   TH1F *histWLR__2 = new TH1F("histWLR__2","Weighted Likelihood Ratios",100,0,1);
+   histWLR__2->SetBinContent(46,1);
+   histWLR__2->SetBinContent(48,2);
+   histWLR__2->SetBinContent(50,1);
+   histWLR__2->SetBinContent(51,4);
+   histWLR__2->SetBinContent(52,1);
+   histWLR__2->SetBinContent(53,12);
+   histWLR__2->SetBinContent(54,21);
+   histWLR__2->SetBinContent(55,43);
+   histWLR__2->SetBinContent(56,18);
+   histWLR__2->SetBinContent(57,7);
+   histWLR__2->SetBinContent(58,1);
+   histWLR__2->SetBinContent(59,2);
+   histWLR__2->SetBinContent(60,1);
+   histWLR__2->SetBinContent(101,29382);
+   histWLR__2->SetEntries(29496);
+   histWLR__2->SetDirectory(0);
+   
+   ptstats = new TPaveStats(0.78,0.775,0.98,0.935,"brNDC");
+   ptstats->SetName("stats");
+   ptstats->SetBorderSize(1);
+   ptstats->SetFillColor(0);
+   ptstats->SetTextAlign(12);
+   ptstats->SetTextFont(42);
+   text = ptstats->AddText("histWLR");
+   text->SetTextSize(0.0368);
+   text = ptstats->AddText("Entries = 29496  ");
+   text = ptstats->AddText("Mean  = 0.5411");
+   text = ptstats->AddText("RMS   = 0.01967");
+   ptstats->SetOptStat(1111);
+   ptstats->SetOptFit(0);
+   ptstats->Draw();
+   histWLR__2->GetListOfFunctions()->Add(ptstats);
+   ptstats->SetParent(histWLR__2);
+   histWLR__2->SetFillColor(50);
+   histWLR__2->SetFillStyle(3005);
+
+   ci = TColor::GetColor("#ff0000");
+   histWLR__2->SetLineColor(ci);
+   histWLR__2->SetLineStyle(7);
+   histWLR__2->SetLineWidth(4);
+   histWLR__2->SetMarkerColor(2);
+   histWLR__2->SetMarkerStyle(20);
+   histWLR__2->SetMarkerSize(1.1);
+   histWLR__2->GetXaxis()->SetRange(31,70);
+   histWLR__2->GetXaxis()->SetLabelFont(42);
+   histWLR__2->GetXaxis()->SetLabelSize(0.035);
+   histWLR__2->GetXaxis()->SetTitleSize(0.035);
+   histWLR__2->GetXaxis()->SetTitleFont(42);
+   histWLR__2->GetYaxis()->SetLabelFont(42);
+   histWLR__2->GetYaxis()->SetLabelSize(0.035);
+   histWLR__2->GetYaxis()->SetTitleSize(0.035);
+   histWLR__2->GetYaxis()->SetTitleOffset(0);
+   histWLR__2->GetYaxis()->SetTitleFont(42);
+   histWLR__2->GetZaxis()->SetLabelFont(42);
+   histWLR__2->GetZaxis()->SetLabelSize(0.035);
+   histWLR__2->GetZaxis()->SetTitleSize(0.035);
+   histWLR__2->GetZaxis()->SetTitleFont(42);
+   histWLR__2->Draw("E3SAMESAMESAMESAMESAMESAMESAMESAMESAMESAMESAMESAMESAMESAMEHISTSAME");
+   
+   TLegend *leg = new TLegend(0.1271967,0.5045161,0.423431,0.6645161,NULL,"brNDC");
+   leg->SetBorderSize(1);
+   leg->SetTextFont(72);
+   leg->SetTextSize(0.02709677);
+   leg->SetLineColor(1);
+   leg->SetLineStyle(1);
+   leg->SetLineWidth(2);
+   leg->SetFillColor(0);
+   leg->SetFillStyle(1001);
+   TLegendEntry *entry=leg->AddEntry("histLR","Likelihood Ratios","l");
+
+   ci = TColor::GetColor("#0000ff");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(3);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(72);
+   entry=leg->AddEntry("histWLR","Weighted Likelihood Ratios","l");
+
+   ci = TColor::GetColor("#ff0000");
+   entry->SetLineColor(ci);
+   entry->SetLineStyle(7);
+   entry->SetLineWidth(4);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   entry->SetTextFont(72);
+   leg->Draw();
+   
+   TPaveText *pt = new TPaveText(0.2505519,0.931436,0.7487123,0.9870634,"blNDC");
+   pt->SetName("title");
+   pt->SetBorderSize(0);
+   pt->SetFillColor(0);
+   pt->SetFillStyle(0);
+   text = pt->AddText("Log-Likelihood Ratios Histograms");
+   pt->Draw();
+   canvas->Modified();
+   canvas->cd();
+   canvas->SetSelected(canvas);
+   canvas->ToggleToolBar();
+}
