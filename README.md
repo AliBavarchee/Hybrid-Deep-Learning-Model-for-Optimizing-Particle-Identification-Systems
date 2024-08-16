@@ -1,7 +1,9 @@
 ![Logo](cover12.jpg)
 # A Hybrid Deep Learning Model for Optimizing Particle Identification Systems
 
-
+## Links
+- <a href="https://www.sciencedirect.com/science/article/pii/S0010465524002005" style="color:red;">Read the Full Paper</a>
+- <a href="https://cassyni.com/events/MxbrLip4bbxFc6bnCxvcBw?cb=functi" style="color:red;">Watch the Recorded Presentation</a>
 
 This project presents a novel hybrid algorithm that combines the power of a deep neural network (DNN) with a random forest regressor (RFR) to effectively enhance PID tasks within the experiment.
 
