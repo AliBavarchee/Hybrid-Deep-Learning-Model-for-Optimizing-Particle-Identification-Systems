@@ -1,4 +1,4 @@
-![Logo](DEEPRFR.png)
+![Logo](cover12.jpg)
 # A Hybrid Deep Learning Model for Optimizing Particle Identification Systems
 
 
